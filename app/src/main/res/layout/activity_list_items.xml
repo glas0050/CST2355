@@ -28,8 +28,8 @@
     <!--android:layout_gravity="left|bottom"-->
 
 
-
     <ImageButton
+        android:layout_width="wrap_content"
         android:src="@android:drawable/ic_menu_camera" />
     <!--android:layout_gravity="center|bottom"-->
 
