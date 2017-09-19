@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidLabs</string>
+    <string name="hello_message">Bonjour!</string><!--Hello-->
+    <string name="ButtonText">Je suis un bouton</string><!--I'm a button-->
+    <string name="loginText">S\'identifier</string>                 <!--Login-->
+    <string name="loginNameText">identifiant</string>        <!--Login Name-->
+    <string name="passwordText">mot de passe</string>           <!--password-->
+    <string name="radioButtonText">Bouton radio</string>>   <!--Radio Button-->
+    <string name="checkBoxText">Case à cocher</string>          <!--Check Box-->
+    <string name="whatDoText">Qu\'est-ce que cela fait</string>    <!--What does this do-->
+</resources>
