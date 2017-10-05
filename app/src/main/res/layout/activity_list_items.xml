@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,19 +17,29 @@
 
 
     <CheckBox
-        android:text="@string/checkBoxText"/>
+        android:id="@+id/checkBox"
+        android:text="@string/checkBoxText"
+        android:onClick="onCheckedChanged"
+        />
     <!--android:layout_gravity="center|top"-->
 
 
 
     <Switch
-        android:text="@string/whatDoText"/>
+        android:id="@+id/switch1"
+        android:text="@string/whatDoText"
+        android:onClick="setOnCheckedChanged"
+        />
     <!--android:layout_gravity="left|bottom"-->
 
 
     <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
-        android:src="@android:drawable/ic_menu_camera" />
+        android:src="@android:drawable/ic_menu_camera"
+        android:onClick="phonePhotoApp"
+        />
+
     <!--android:layout_gravity="center|bottom"-->
 
 

@@ -1,8 +1,25 @@
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="hello_message">Hello World</string>
-    <string name="ButtonText">I\'m a button</string>
-    <string name="LoginText">Login</string>
-    <string name="PasswordText">password</string>
-    <string name="LoginHint">Login</string>
+    <string name="hello_message">Hello</string>                             <!--Hello-->
+    <string name="ButtonText">I\'m a button</string>                        <!--I'm a button-->
+    <string name="loginText">Login</string>                                 <!--Login-->
+    <string name="passwordText">password</string>                           <!--password-->
+    <string name="dialog_message">Do you want to close this window</string> <!--Do you want to close this window-->
+    <string name="ok">OK</string>                                           <!--OK-->
+    <string name="cancel">Cancel</string>                                   <!--Cancel-->
+    <string name="loginNameText">Login Name</string>                        <!--Login Name-->
+    <string name="radioButtonText">Radio Button</string>>                   <!--Radio Button-->
+    <string name="checkBoxText">Check Box</string>                          <!--Check Box-->
+    <string name="whatDoText">What does this do</string>                    <!--What does this do-->
+    <string name="dialog_title">Exit</string>                               <!--Exit-->
+    <string name="swOnText">Switch is on</string>                           <!--Switch is on-->
+    <string name="swOffText">Switch is off</string>                         <!--Switch is off-->
+    <string name="listExitResponse">Here is my response</string>            <!--Here is my response-->
+    <string name="chat">Start Chat</string>                                 <!--Start Chat-->
+    <string name="editText">Edit Text</string>                              <!--Edit Text-->
+    <string name="newText">New Text</string>                                <!--New Text-->
+    <string name="incoming">Incoming Message</string>                       <!--Incoming Message-->
+    <string name="outgoing">Outgoing Message</string>                       <!--Outgoing Message-->
+    <string name="entertext">Enter your text here</string>                  <!--Enter your text here-->
+
 </resources>
