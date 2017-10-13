@@ -22,6 +22,7 @@ public class ChatWindow extends Activity {
     Button btText;
     ArrayList <String> chatHistory;
     ChatAdapter messageAdapter;
+    ChatDatabaseHelper db;
 
 
     @Override
@@ -31,25 +32,37 @@ public class ChatWindow extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_window);
 
+        /*ChatDatabaseHelper dbHelper = new ChatDatabaseHelper();*/
+
+        db = new ChatDatabaseHelper(this);
+  /*      db.dbDelete();*/
+        chatHistory = db.getEntireTable();
+
+
+
         btText = (Button) findViewById(R.id.btnEditText);
 
         btText.setOnClickListener(btHandle);
         lvText = (ListView) findViewById(R.id.lvChat);
         etText = (EditText) findViewById(R.id.etxChat);
 
-        chatHistory = new ArrayList<>();
+        /*chatHistory = new ArrayList<>();*/
         messageAdapter =new ChatAdapter( this );
 
         lvText.setAdapter (messageAdapter);
+   }
 
-
-
+    protected void onDestroy() {
+        Log.i(ACTIVITY_NAME, "In onDestroy()");
+        super.onDestroy();
     }
+
 
     View.OnClickListener btHandle = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             chatHistory.add(etText.getText().toString());
+            db.dbAddChat(etText.getText().toString());
             Log.i(ACTIVITY_NAME, "User clicked Edit Text");
             messageAdapter.notifyDataSetChanged(); //this restarts the process of getCount()/ getView()
             etText.setText("");
